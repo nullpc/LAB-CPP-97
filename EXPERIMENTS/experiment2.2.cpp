@@ -7,7 +7,7 @@ class Student
     string name; 
     int rollNo; 
     float marks; 
-    public: 
+    //public: 
     void inputDetails() 
     { 
         cout << "Enter Student Name: "; 
@@ -16,7 +16,10 @@ class Student
         cin >> rollNo; cout << "Enter Marks: "; 
         cin >> marks; 
     }
-    void displayDetails() const { 
+    public:
+    void displayDetails() 
+    { 
+        inputDetails();
         cout << "\n----- Student Details -----\n"; 
         cout << "Name : " << name << endl; 
         cout << "Roll No. : " << rollNo << endl; 
@@ -26,7 +29,9 @@ class Student
 int main() 
 { 
     Student s; 
-    s.inputDetails(); 
+   // s.inputDetails();
+   // getdetails();
+    //s.rollNo=100;
     s.displayDetails(); 
     return 0; 
 } 
