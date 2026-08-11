@@ -12,7 +12,8 @@ private:
     float marks;
 
 public:
-    void inputFromFile() {
+    void inputFromFile() 
+    {
         ifstream inputFile("student_data.txt");
         if (!inputFile) {
             cout << "Error: Could not open student_data.txt!" << endl;
