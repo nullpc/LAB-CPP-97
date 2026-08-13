@@ -15,6 +15,5 @@
         std::cout<<"enter the two number";
         std::cin>>a>>b;
         std::cout<<"sub of two number is"<<(a-b);
-        return 0;
     }
  }
