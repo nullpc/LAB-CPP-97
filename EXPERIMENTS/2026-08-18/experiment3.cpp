@@ -18,7 +18,6 @@ public:
         cout << real << " + i" << imag << endl;
     }
 };
-
 int main() 
 {
     Complex c1(4, 5), c2(8, 9);
