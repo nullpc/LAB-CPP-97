@@ -58,7 +58,7 @@ public:
     virtual ~Person() {}
 };
 
-class Author {                        //Author Funstion 
+class Author {                        //Author Function 
 private:
     string name;
     string nationality;

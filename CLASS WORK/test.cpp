@@ -8,7 +8,7 @@ class Robot {
 public:
     string name; // Variable
 
-    void introduce() { // Function
+    void introduce() { // Member Function
         cout << "Hello, I am " << name << "!" << endl;
     }
 };

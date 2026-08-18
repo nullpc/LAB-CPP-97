@@ -1,22 +1,4 @@
 /*
-    ==============================================================
-    LIBRARY MANAGEMENT SYSTEM  (with persistent activity log)
-    ==============================================================
-    A multi-class C++ OOP project demonstrating:
-      - Encapsulation (private data + public methods)
-      - Inheritance   (Person -> Member, Person -> Librarian)
-      - Composition   (Book contains Author, Publisher, Category, Rack)
-      - Polymorphism  (virtual displayPerson())
-      - File Handling (every action is logged to library_data.txt)
-
-    Classes used (16 total):
-      1.  Address        7. Rack           13. Reservation
-      2.  Person          8. Book          14. Inventory
-      3.  Author          9. Member        15. Logger
-      4.  Publisher      10. LibraryCard   16. Library (controller)
-      5.  Librarian      11. Fine
-      6.  Category       12. IssueRecord
-
     NOTE ON THE LOG FILE:
       Every time you Add a Book/Member/Librarian, Issue/Return a book,
       or make a Reservation, a neatly formatted, timestamped block is
