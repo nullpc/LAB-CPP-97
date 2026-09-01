@@ -6,7 +6,6 @@
       (NOT inside this .cpp file). The file is created automatically
       the first time the program runs, and grows across runs since it
       is opened in append mode.
-    ==============================================================
 */
 
 #include <iostream>
