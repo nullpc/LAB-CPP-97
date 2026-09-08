@@ -1,22 +1,26 @@
 #include <iostream> 
 using namespace std; 
 // Saving Account Class 
-class SavingAccount { 
+class SavingAccount 
+{ 
 private: 
 string accountHolderName; 
 int accountNumber; 
 double balance; 
 double interestRate; 
 public: 
-SavingAccount(string name, int accNumber, double initialBalance, double rate) {
+SavingAccount(string name, int accNumber, double initialBalance, double rate) 
+{
 accountHolderName = name; 
 accountNumber = accNumber; 
 balance = initialBalance; 
 interestRate = rate; 
 } 
-void deposit(double amount) { 
-if (amount > 0) { 
-balance += amount; 
+void deposit(double amount) 
+{ 
+if (amount > 0) 
+{ 
+balance =balance + amount; 
 cout << "Deposited: ₹" << amount << endl; 
 } 
 } 
@@ -49,7 +53,8 @@ int accountNumber;
 double balance;
 double transactionFee; 
 public: 
-CheckingAccount(string name, int accNumber, double initialBalance, double fee) { 
+CheckingAccount(string name, int accNumber, double initialBalance, double fee) 
+{ 
 accountHolderName = name; 
 accountNumber = accNumber; 
 balance = initialBalance; 
@@ -80,7 +85,8 @@ cout << "Transaction Fee: ₹" << transactionFee << endl;
 } 
 }; 
 // Main Function 
-int main() { 
+int main() 
+{ 
 SavingAccount savings("Maaz", 1001, 5000.0, 3.0); 
 CheckingAccount checking("Afraaz", 1002, 3000.0, 20.0); 
 // Operations on Savings Account 
